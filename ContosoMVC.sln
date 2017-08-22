@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoMVC", "ContosoMVC\ContosoMVC.csproj", "{282CCDE4-C4C8-4E66-A7C8-BEE241DCB446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoModel", "ContosoModel\ContosoModel.csproj", "{D6A2037B-740F-4CFD-8A87-991E7F09396F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoData", "ContosoData\ContosoData.csproj", "{A1E2B9D3-7896-4390-8993-5A117D878AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoService", "ContosoService\ContosoService.csproj", "{1C5C3BF4-66C9-43CD-B996-9C25AB54CBF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{282CCDE4-C4C8-4E66-A7C8-BEE241DCB446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282CCDE4-C4C8-4E66-A7C8-BEE241DCB446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282CCDE4-C4C8-4E66-A7C8-BEE241DCB446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282CCDE4-C4C8-4E66-A7C8-BEE241DCB446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A2037B-740F-4CFD-8A87-991E7F09396F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A2037B-740F-4CFD-8A87-991E7F09396F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A2037B-740F-4CFD-8A87-991E7F09396F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A2037B-740F-4CFD-8A87-991E7F09396F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E2B9D3-7896-4390-8993-5A117D878AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E2B9D3-7896-4390-8993-5A117D878AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E2B9D3-7896-4390-8993-5A117D878AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E2B9D3-7896-4390-8993-5A117D878AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C5C3BF4-66C9-43CD-B996-9C25AB54CBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5C3BF4-66C9-43CD-B996-9C25AB54CBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5C3BF4-66C9-43CD-B996-9C25AB54CBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5C3BF4-66C9-43CD-B996-9C25AB54CBF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1E2B9D3-7896-4390-8993-5A117D878AF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContosoData</RootNamespace>
+    <AssemblyName>ContosoData</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContosoDBContext.cs" />
+    <Compile Include="CourseRepository.cs" />
+    <Compile Include="DepartmentRepository.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="Migrations\201708152102533_PeopleTable.cs" />
+    <Compile Include="Migrations\201708152102533_PeopleTable.Designer.cs">
+      <DependentUpon>201708152102533_PeopleTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162005115_DeptTable.cs" />
+    <Compile Include="Migrations\201708162005115_DeptTable.Designer.cs">
+      <DependentUpon>201708162005115_DeptTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162007395_UpdatedPeopleTable.cs" />
+    <Compile Include="Migrations\201708162007395_UpdatedPeopleTable.Designer.cs">
+      <DependentUpon>201708162007395_UpdatedPeopleTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162012209_CourseTable.cs" />
+    <Compile Include="Migrations\201708162012209_CourseTable.Designer.cs">
+      <DependentUpon>201708162012209_CourseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162017385_FK_DeptCourse.cs" />
+    <Compile Include="Migrations\201708162017385_FK_DeptCourse.Designer.cs">
+      <DependentUpon>201708162017385_FK_DeptCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162025202_StudentTable.cs" />
+    <Compile Include="Migrations\201708162025202_StudentTable.Designer.cs">
+      <DependentUpon>201708162025202_StudentTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162029418_EnrollmentTable.cs" />
+    <Compile Include="Migrations\201708162029418_EnrollmentTable.Designer.cs">
+      <DependentUpon>201708162029418_EnrollmentTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162033392_FK_StudentEnrollment.cs" />
+    <Compile Include="Migrations\201708162033392_FK_StudentEnrollment.Designer.cs">
+      <DependentUpon>201708162033392_FK_StudentEnrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162035357_FK_CourseEnrollment.cs" />
+    <Compile Include="Migrations\201708162035357_FK_CourseEnrollment.Designer.cs">
+      <DependentUpon>201708162035357_FK_CourseEnrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162041459_InstructorTable.cs" />
+    <Compile Include="Migrations\201708162041459_InstructorTable.Designer.cs">
+      <DependentUpon>201708162041459_InstructorTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162045214_FK_InstructorDept.cs" />
+    <Compile Include="Migrations\201708162045214_FK_InstructorDept.Designer.cs">
+      <DependentUpon>201708162045214_FK_InstructorDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162054346_OfficeAssignmentTable.cs" />
+    <Compile Include="Migrations\201708162054346_OfficeAssignmentTable.Designer.cs">
+      <DependentUpon>201708162054346_OfficeAssignmentTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162055198_FK_OfficeInstructor.cs" />
+    <Compile Include="Migrations\201708162055198_FK_OfficeInstructor.Designer.cs">
+      <DependentUpon>201708162055198_FK_OfficeInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162105037_RoleTable.cs" />
+    <Compile Include="Migrations\201708162105037_RoleTable.Designer.cs">
+      <DependentUpon>201708162105037_RoleTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162109271_Junction_PersonRoles.cs" />
+    <Compile Include="Migrations\201708162109271_Junction_PersonRoles.Designer.cs">
+      <DependentUpon>201708162109271_Junction_PersonRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708162130292_Junction_InstructorCourses.cs" />
+    <Compile Include="Migrations\201708162130292_Junction_InstructorCourses.Designer.cs">
+      <DependentUpon>201708162130292_Junction_InstructorCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PersonRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContosoModel\ContosoModel.csproj">
+      <Project>{d6a2037b-740f-4cfd-8a87-991e7f09396f}</Project>
+      <Name>ContosoModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708152102533_PeopleTable.resx">
+      <DependentUpon>201708152102533_PeopleTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162005115_DeptTable.resx">
+      <DependentUpon>201708162005115_DeptTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162007395_UpdatedPeopleTable.resx">
+      <DependentUpon>201708162007395_UpdatedPeopleTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162012209_CourseTable.resx">
+      <DependentUpon>201708162012209_CourseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162017385_FK_DeptCourse.resx">
+      <DependentUpon>201708162017385_FK_DeptCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162025202_StudentTable.resx">
+      <DependentUpon>201708162025202_StudentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162029418_EnrollmentTable.resx">
+      <DependentUpon>201708162029418_EnrollmentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162033392_FK_StudentEnrollment.resx">
+      <DependentUpon>201708162033392_FK_StudentEnrollment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162035357_FK_CourseEnrollment.resx">
+      <DependentUpon>201708162035357_FK_CourseEnrollment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162041459_InstructorTable.resx">
+      <DependentUpon>201708162041459_InstructorTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162045214_FK_InstructorDept.resx">
+      <DependentUpon>201708162045214_FK_InstructorDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162054346_OfficeAssignmentTable.resx">
+      <DependentUpon>201708162054346_OfficeAssignmentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162055198_FK_OfficeInstructor.resx">
+      <DependentUpon>201708162055198_FK_OfficeInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162105037_RoleTable.resx">
+      <DependentUpon>201708162105037_RoleTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162109271_Junction_PersonRoles.resx">
+      <DependentUpon>201708162109271_Junction_PersonRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708162130292_Junction_InstructorCourses.resx">
+      <DependentUpon>201708162130292_Junction_InstructorCourses.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
